@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>PremiaSource — No Commissions. Lower Than Factory-Direct.</title>
+ <title>Ultimate purchasing experience.</title>
  <meta name="description" content="China sourcing at factory-direct prices. No commissions. Our profit comes from export tax rebates. We handle everything from sourcing to delivery." />
  <link rel="preconnect" href="https://fonts.googleapis.com" />
  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -120,6 +120,36 @@
  .section { padding: 100px 0; }
  .section-dark { background: #111; color: #fff; }
  .section-cream { background: #f8f6f1; }
+ .section-hiw-dark {
+ padding: 100px 0;
+ background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=80') center center / cover no-repeat fixed;
+ position: relative;
+ }
+ .section-hiw-dark::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.35) 100%);
+ }
+ .section-hiw-dark .container { position: relative; z-index: 2; }
+ .section-hiw-dark .section-title h2 { color: #fff; }
+ .section-hiw-dark .section-title p { color: rgba(255,255,255,0.5); }
+ .section-testimonials-img {
+ padding: 100px 0;
+ background: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600&q=80') center center / cover no-repeat fixed;
+ position: relative;
+ }
+ .section-testimonials-img::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%);
+ }
+ .section-testimonials-img .container { position: relative; z-index: 2; }
+ .section-testimonials-img .section-title h2 { color: #fff; }
+ .section-testimonials-img .section-title p { color: rgba(255,255,255,0.5); }
+ .section-testimonials-img .test-card { background: rgba(255,255,255,0.93); backdrop-filter: blur(8px); }
+ .section-testimonials-img .test-card blockquote { color: #333; }
  .section-title { text-align: center; margin-bottom: 4rem; }
  .section-label {
  display: inline-block;
@@ -132,58 +162,25 @@
  .section-title p { color: #888; max-width: 520px; margin: 0.75rem auto 0; font-size: 0.95rem; }
  .section-dark .section-title p { color: rgba(255,255,255,0.5); }
 
- /* How It Works (new replacement for old Capabilities) */
- .hiw-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 20px;
- }
- .hiw-card {
- background: #fff;
- border-radius: 16px;
- padding: 36px 28px;
- border: 1px solid #eee;
- transition: all 0.35s ease;
- position: relative;
- overflow: hidden;
- }
+ /* How It Works */
+ .hiw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+ .hiw-card { background: #fff; border-radius: 16px; padding: 36px 28px; border: 1px solid #eee; transition: all 0.35s ease; position: relative; overflow: hidden; }
  .hiw-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.06); }
- .hiw-card .num {
- position: absolute; top: 16px; right: 20px;
- font-size: 3rem; font-weight: 900; color: rgba(192,168,106,0.12);
- line-height: 1;
- }
+ .hiw-card .num { position: absolute; top: 16px; right: 20px; font-size: 3rem; font-weight: 900; color: rgba(192,168,106,0.12); line-height: 1; }
  .hiw-card .icon { font-size: 2rem; margin-bottom: 1rem; }
  .hiw-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
  .hiw-card p { font-size: 0.88rem; color: #666; line-height: 1.6; }
 
- /* Why Us Section */
- .why-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
- gap: 24px;
- }
- .why-card {
- background: #fff;
- border-radius: 14px;
- padding: 32px 28px;
- border: 1px solid #eee;
- transition: all 0.3s;
- }
+ /* Why Us */
+ .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
+ .why-card { background: #fff; border-radius: 14px; padding: 32px 28px; border: 1px solid #eee; transition: all 0.3s; }
  .why-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.04); }
  .why-card .icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
  .why-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
  .why-card p { font-size: 0.85rem; color: #666; line-height: 1.6; }
 
  /* Stats */
- .stats-grid {
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- gap: 2px;
- background: #1a1a1a;
- border-radius: 16px;
- overflow: hidden;
- }
+ .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: #1a1a1a; border-radius: 16px; overflow: hidden; }
  .stat-item { background: #111; padding: 48px 24px; text-align: center; }
  .stat-number { font-size: 2.8rem; font-weight: 900; color: #c0a86a; line-height: 1; }
  .stat-number .suffix { font-size: 1.4rem; }
@@ -191,49 +188,16 @@
  @media (max-width: 768px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
 
  /* Industries */
- .ind-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- gap: 16px;
- }
+ .ind-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
  .ind-card { position: relative; height: 200px; border-radius: 14px; overflow: hidden; cursor: pointer; }
  .ind-card img { width: 100%; height: 100%; object-fit: cover; transition: scale 0.4s; }
  .ind-card:hover img { scale: 1.08; }
- .ind-overlay {
- position: absolute; inset: 0;
- background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 70%);
- display: flex; flex-direction: column; justify-content: flex-end;
- padding: 20px;
- }
+ .ind-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 70%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; }
  .ind-overlay h4 { color: #fff; font-weight: 700; font-size: 1rem; }
  .ind-overlay p { color: rgba(255,255,255,0.6); font-size: 0.75rem; margin: 0; }
 
- /* Process */
- .process-timeline { position: relative; padding-left: 40px; }
- .process-timeline::before {
- content: '';
- position: absolute; left: 14px; top: 0; bottom: 0;
- width: 2px; background: linear-gradient(180deg, #c0a86a, rgba(192,168,106,0.1));
- }
- .process-item { position: relative; padding: 0 0 48px 40px; }
- .process-item:last-child { padding-bottom: 0; }
- .process-dot {
- position: absolute; left: -40px; top: 4px;
- width: 28px; height: 28px;
- background: #c0a86a; border-radius: 50%;
- border: 4px solid #1a1a1a;
- display: flex; align-items: center; justify-content: center;
- color: #111; font-size: 0.75rem; font-weight: 900;
- }
- .process-item h3 { font-size: 1rem; margin-bottom: 4px; color: #fff; }
- .process-item p { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin: 0; }
-
  /* Testimonials */
- .test-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 24px;
- }
+ .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
  .test-card { background: #fff; border-radius: 14px; padding: 32px 28px; border: 1px solid #eee; transition: all 0.3s; }
  .test-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.05); }
  .test-stars { color: #c0a86a; font-size: 0.9rem; margin-bottom: 0.75rem; }
@@ -243,18 +207,6 @@
  .test-name { font-weight: 700; font-size: 0.85rem; }
  .test-role { font-size: 0.75rem; color: #999; }
 
- /* CTA */
- .cta-section {
- padding: 120px 0;
- background: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600&q=80') center center / cover no-repeat fixed;
- position: relative;
- }
- .cta-section::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%); }
- .cta-section .container { position: relative; z-index: 2; text-align: center; }
- .cta-section h2 { color: #fff; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
- .cta-section p { color: rgba(255,255,255,0.6); max-width: 500px; margin: 0 auto 2rem; }
- .cta-section .btn-primary { font-size: 1rem; padding: 18px 40px; }
-
  /* Contact */
  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
  .contact-info h3 { font-weight: 700; margin-bottom: 0.5rem; }
@@ -263,18 +215,6 @@
  .contact-row .ci { font-size: 1.2rem; width: 28px; text-align: center; }
  .contact-row a { color: #111; font-weight: 500; }
  .contact-row a:hover { color: #c0a86a; }
- .contact-form input, .contact-form textarea {
- width: 100%; padding: 14px 18px;
- border: 1px solid #ddd; border-radius: 10px;
- font-size: 0.9rem; font-family: inherit;
- margin-bottom: 14px; transition: border-color 0.2s;
- background: #fafafa;
- }
- .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #c0a86a; background: #fff; }
- .contact-form textarea { height: 130px; resize: vertical; }
- .contact-form .btn { width: 100%; justify-content: center; }
- .trust-box { margin-top: 1.5rem; padding: 16px 20px; background: #f8f6f1; border-radius: 10px; }
- .trust-box p { font-size: 0.85rem; margin: 0; }
 
  /* Footer */
  footer { background: #0a0a0a; color: rgba(255,255,255,0.4); text-align: center; padding: 40px 24px; font-size: 0.78rem; }
@@ -298,13 +238,14 @@
 
 <header id="header">
  <nav class="container">
- <a href="#" class="logo">Premia<span>Source</span></a>
+ <a href="#" class="logo">Ultimate<span>Sourcing</span></a>
  <div class="nav-links" id="navLinks">
  <a href="#how-it-works">How It Works</a>
+ <a href="#why-us">Why Choose Us</a>
+ <a href="#stats">Service Quality</a>
  <a href="#industries">Industries</a>
- <a href="#process">Process</a>
  <a href="#testimonials">Clients</a>
- <a href="#contact" class="nav-cta">Send a Request →</a>
+ <a href="#contact">Contact Us</a>
  </div>
  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
  <span></span><span></span><span></span>
@@ -318,23 +259,22 @@
  <div class="hero-overlay"></div>
  <div class="container">
  <div class="hero-content">
- <div class="hero-badge">⚡ No Commissions. Factory-Direct Pricing.</div>
+ <div class="hero-badge">⚡ From inquiry to procurement to delivery, we provide you with the ultimate purchasing experience.</div>
  <h1>Lower Than Any Trader.<br /><em>Lower Than You'd Get</em><br />Going Direct.</h1>
  <p>
- We don't charge commissions. Our profit comes from China's export tax rebate system — a benefit only available to registered Chinese exporters.
- We pit 3-5 factories against each other on every product. The result? Prices 15-30% below market, and lower than what you'd get approaching factories yourself.
+We don't charge commissions. Our profit comes from China's export tax rebate system and extremely low operating expenses — a benefit only available to registered Chinese exporters.We have 3-5 factories competing with each other on each product, and we use excellent supply chain comparison and negotiation skills to get the lowest price given by the factory. The price is 15% -30% lower than the market and Alibaba International Station. Usually, customers cannot get the lowest real price even if they contact the factory themselves.
  </p>
  <div class="hero-buttons">
- <a href="#contact" class="btn btn-primary">📦 Send a Product Request →</a>
+ <a href="https://wa.me/8613269652357" target="_blank" class="btn btn-primary" style="background:#25D366;color:#fff !important;">💬 Start Sourcing on WhatsApp →</a>
  <a href="#how-it-works" class="btn btn-outline-light">How It Works</a>
  </div>
  <div class="hero-strip">
  <div class="hero-strip-item">
- <div class="hero-strip-num">100+</div>
+ <div class="hero-strip-num">600+</div>
  <div class="hero-strip-label">Factory Partners</div>
  </div>
  <div class="hero-strip-item">
- <div class="hero-strip-num">50+</div>
+ <div class="hero-strip-num">1000+</div>
  <div class="hero-strip-label">Product Categories</div>
  </div>
  <div class="hero-strip-item">
@@ -351,7 +291,7 @@
 </section>
 
 <!-- ===== HOW IT WORKS ===== -->
-<section class="section section-cream" id="how-it-works">
+<section class="section-hiw-dark" id="how-it-works">
  <div class="container">
  <div class="section-title">
  <div class="section-label">— What We Do —</div>
@@ -387,13 +327,13 @@
  <div class="num">5</div>
  <div class="icon">📦</div>
  <h3>Consolidated Logistics</h3>
- <p>We combine multiple clients' orders into one container, saving you 60-80% on shipping. Sea, air, rail, express — whichever fits your timeline and budget.</p>
+ <p>We have excellent freight forwarding partners in China, and we can get the lowest shipping costs,Moreover,We combine multiple clients' orders into one container, saving you 60-80% on shipping. Sea, air, rail, express — whichever fits your timeline and budget.</p>
  </div>
  <div class="hiw-card fade-in">
  <div class="num">6</div>
  <div class="icon">🛡️</div>
  <h3>Full Responsibility</h3>
- <p>Problems after shipment? We handle returns, replacements, and re-orders in China — no cost to you. You're never stuck with defective goods.</p>
+ <p>Problems after shipment? We handle returns, replacements, and re-orders in China. You're never stuck with defective goods.</p>
  </div>
  </div>
  </div>
@@ -403,53 +343,59 @@
 <section class="section" id="why-us">
  <div class="container">
  <div class="section-title">
- <div class="section-label">— Why PremiaSource —</div>
+ <div class="section-label">— Why UltimateSourcing —</div>
  <h2>The 7 Reasons Clients Choose Us</h2>
  <p>We don't just say we're different. Here's exactly how we work.</p>
  </div>
  <div class="why-grid">
  <div class="why-card fade-in">
  <div class="icon">🏢</div>
- <h3>1. Registered Chinese Company</h3>
- <p>Licensed, import/export authorized, VAT-capable. All transactions backed by formal contracts. TT bank transfers accepted. Full export documentation provided (invoice, packing list, B/L, certificate of origin). This is proper B2B trade, not a casino.</p>
+ <h3>1. We're a Legitimate Chinese Company</h3>
+ <p>Officially registered with China's Administration for Industry &amp; Commerce. Fully licensed for import and export. We've partnered with hundreds of factories across dozens of product categories to secure the lowest possible prices. All transactions backed by formal contracts, TT bank transfer accepted. We provide VAT invoices and full export documentation (commercial invoice, packing list, bill of lading, certificate of origin). This is proper, traceable B2B trade — not a gamble.</p>
  </div>
  <div class="why-card fade-in">
  <div class="icon">💰</div>
- <h3>2. No Commissions. Real Pricing.</h3>
- <p>Zero commission. Zero hidden fees. Our profit comes from China's export tax rebate system. We add a minimal operating fee (far less than any middleman). You get factory-direct pricing — the same product on Alibaba typically costs 30-50% more after layers of middlemen and platform fees.</p>
+ <h3>2. Zero Commissions — Genuine Factory Pricing</h3>
+ <p>No commission, no hidden fees. Our profit comes from China's export tax rebate — a government benefit only registered exporters can access. We add a minimal handling fee (far less than any middleman). You pay essentially factory-direct prices. The same product on Alibaba typically costs 30-50% more after layers of middlemen and platform fees.</p>
+ <p>Here's what that means: the same product on Alibaba International typically gets marked up 2-3 times by middlemen, plus platform fees. We source from domestic channels — no middlemen. We make 3-5 factories compete for your order simultaneously, and our professional negotiators bring you the lowest bid. The result? Prices 15-30% below market.</p>
  </div>
  <div class="why-card fade-in">
  <div class="icon">🏗️</div>
- <h3>3. 3-5 Factory Price War on Every Product</h3>
- <p>We don't just find one supplier. We make 3-5 factories bid against each other for your order. Factories give us their best price because they know we're a repeat buyer. The result: you get the lowest quote in the batch, guaranteed.</p>
- <p style="margin-top:8px;color:#c0a86a;font-size:0.8rem;font-weight:600;">→ You cannot get this price approaching factories yourself. First-time buyers always get quoted higher.</p>
+ <h3>3. Small Quantities, Multiple Categories — We Take It All</h3>
+ <p>No minimum order quantity. No need to find a different supplier for every category. Our mature procurement process quickly locates any product and uses bulk negotiation power to get the best price.</p>
+ <p>We have long-term freight partners who give us rates far lower than factories or traders can get on their own. Need sea, air, rail, or express? We choose the safest, fastest option for your timeline. And if you're ordering multiple items, we consolidate everything into one shipment — saving you time and up to 60-80% on shipping costs.</p>
+ <p style="margin-top:8px;color:#c0a86a;font-size:0.8rem;font-weight:600;">→ You cannot get this price approaching a factory on your own. First-time buyers always get quoted higher.</p>
  </div>
  <div class="why-card fade-in">
  <div class="icon">🔎</div>
- <h3>4. Supply Chain Intelligence You Can't Google</h3>
- <p>Years on the ground have taught us: which city makes what best, which factories deliver on time, which ones cut corners, whose certifications are real. We know who's reliable and who to avoid — information no search engine can tell you.</p>
+ <h3>4. Quality Control on Every Order — On-Site for Large Ones</h3>
+ <p>Every single order, regardless of size, includes sample approval before production and pre-shipment inspection before shipping. You approve before we proceed.</p>
+ <p>For large orders, we station someone at the factory to monitor every stage — from raw materials through final packaging. On-site photos, videos, and inspection reports delivered to you in real time. Our staff will also negotiate further price reductions on the spot. We verify every certificate (CE, FDA, SGS, ISO) for authenticity — no fake documents, no shortcuts. We communicate throughout and report logistics tracking.</p>
  </div>
  <div class="why-card fade-in">
  <div class="icon">✅</div>
- <h3>5. QC on Every Order</h3>
- <p>Small orders: sample approval + pre-shipment inspection. Large orders: our staff stationed at the factory from raw materials through final packaging. Photos, videos, inspection reports — you see everything before it ships.</p>
+ <h3>5. On-the-Ground Intel No Website Can Give You</h3>
+ <p>Years of running factories have taught us what no search engine can: which city specializes in what, which factories actually deliver on time, which ones cut corners, and whose certifications are real vs. fake. We know who's reliable and who to avoid.</p>
+ <p>We track raw material price trends (steel, plastic, copper) to warn you of cost changes before they hit. We know China's holiday schedules (Spring Festival, Canton Fair, National Day) and plan production around them. We maintain an industry blacklist of factories that take money and don't deliver. And when a material is unavailable, we know alternatives that can save you money and time. This intelligence is earned — and as our client, it's yours too.</p>
  </div>
  <div class="why-card fade-in">
  <div class="icon">📡</div>
- <h3>6. Full Tracking, Zero Chasing</h3>
- <p>From request to delivery, we update you proactively. Sourcing → production → inspection → shipping → arrival — every milestone reported. You never have to ask "where's my order?"</p>
+ <h3>6. You'll Never Have to Chase Us for Updates</h3>
+ <p>From your first inquiry to final delivery, we update you proactively at every milestone: sourcing → production → inspection → shipping → arrival. You never have to ask "where's my order?"</p>
+ <p>Quotes come back within 2-4 hours for standard products, same day at fastest. Production schedules are tracked daily. If anything goes wrong, we tell you immediately — no hiding, no delays. You sit back and read our updates. We handle the rest.</p>
  </div>
  <div class="why-card fade-in">
  <div class="icon">🎯</div>
- <h3>7. Any Product. Any Category.</h3>
- <p>Lab equipment, industrial machinery, electronics, home goods, packaging, textiles — if it's made in China, we'll find it at the best price. One relationship, unlimited products. And if anything goes wrong, we handle it in China — returns, replacements, at no extra cost to you.</p>
+ <h3>7. Any Product — We'll Find It. Any Problem — We'll Own It.</h3>
+ <p>We've built relationships with hundreds of Chinese suppliers and dozens of freight forwarders. Lab equipment, industrial machinery, electronics, home goods, packaging, textiles — whatever you need, we source it at the best price. One relationship, unlimited categories.</p>
+ <p>If anything goes wrong — quality issues, delivery problems — we handle it. Returns, exchanges, and replacements happen in China, at no extra cost to you. We coordinate with the factory, resolve the root cause, and make it right. You focus on selling. Leave China to us.</p>
  </div>
  </div>
  </div>
 </section>
 
 <!-- ===== STATS ===== -->
-<section class="section section-dark">
+<section class="section section-dark" id="stats">
  <div class="container">
  <div class="section-title">
  <div class="section-label">— By the Numbers —</div>
@@ -458,11 +404,11 @@
  </div>
  <div class="stats-grid fade-in">
  <div class="stat-item">
- <div class="stat-number">100<span class="suffix">+</span></div>
+ <div class="stat-number">600<span class="suffix">+</span></div>
  <div class="stat-label">Factory Partners</div>
  </div>
  <div class="stat-item">
- <div class="stat-number">50<span class="suffix">+</span></div>
+ <div class="stat-number">1000<span class="suffix">+</span></div>
  <div class="stat-label">Product Categories</div>
  </div>
  <div class="stat-item">
@@ -498,7 +444,7 @@
  <div class="container">
  <div class="section-title">
  <div class="section-label">— Industries We Cover —</div>
- <h2>50+ Categories, Unlimited Possibilities</h2>
+ <h2>1000+ Categories, Unlimited Possibilities</h2>
  <p>From precision instruments to consumer goods — we've sourced it all.</p>
  </div>
  <div class="ind-grid">
@@ -548,46 +494,8 @@
  </div>
 </section>
 
-<!-- ===== PROCESS ===== -->
-<section class="section section-dark" id="process">
- <div class="container">
- <div class="section-title">
- <div class="section-label">— How We Work —</div>
- <h2>From Request to Delivery in 5 Steps</h2>
- <p>A proven process that eliminates risk and maximizes value.</p>
- </div>
- <div class="process-timeline fade-in">
- <div class="process-item">
- <div class="process-dot">1</div>
- <h3>You Send a Request</h3>
- <p>A product name, rough specs, and target quantity is enough. We'll come back with factory matches and pricing within 24 hours. No commitment.</p>
- </div>
- <div class="process-item">
- <div class="process-dot">2</div>
- <h3>Multi-Supplier Bidding</h3>
- <p>We engage 3-5 factories from our network. Each submits their best price. Factories compete — you win. We present the best 2-3 options with full transparency.</p>
- </div>
- <div class="process-item">
- <div class="process-dot">3</div>
- <h3>Sample Confirmation</h3>
- <p>We coordinate samples and inspect them in person. Photos, videos, measurements — you approve before we proceed. If it's wrong, we go back. No risk to you.</p>
- </div>
- <div class="process-item">
- <div class="process-dot">4</div>
- <h3>Production &amp; Inspection</h3>
- <p>We track every stage. Pre-shipment inspection on every order. Large orders get on-site staff monitoring production. Weekly updates with visual proof.</p>
- </div>
- <div class="process-item">
- <div class="process-dot">5</div>
- <h3>Delivery &amp; Support</h3>
- <p>We handle shipping, customs clearance, documentation. Problems after delivery? We fix it in China — replacements, returns, at no extra cost. You're covered.</p>
- </div>
- </div>
- </div>
-</section>
-
 <!-- ===== TESTIMONIALS ===== -->
-<section class="section" id="testimonials">
+<section class="section-testimonials-img" id="testimonials">
  <div class="container">
  <div class="section-title">
  <div class="section-label">— Client Voices —</div>
@@ -597,7 +505,7 @@
  <div class="test-grid">
  <div class="test-card fade-in">
  <div class="test-stars">★★★★★</div>
- <blockquote>"I was skeptical at first, but their pricing is genuinely lower than anything I've found in 8 years of importing from China. No commissions, factory-direct prices, and they handle everything. They saved me 18% on my first order alone."</blockquote>
+ <blockquote>"I was skeptical at first, but their pricing is genuinely lower than anything I've found in 8 years of importing from China. No commissions,they handle everything. They saved me 18% on my first order alone."</blockquote>
  <div class="test-author">
  <div class="test-avatar">MT</div>
  <div>
@@ -608,7 +516,7 @@
  </div>
  <div class="test-card fade-in">
  <div class="test-stars">★★★★★</div>
- <blockquote>"We needed a hard-to-find medical component with strict CE certification. They found us a factory within 48 hours and handled the entire compliance process. Flawless from start to finish."</blockquote>
+ <blockquote>"We needed a hard-to-find medical component with strict CE certification. They found us a factory within 24 hours and handled the entire compliance process. Flawless from start to finish."</blockquote>
  <div class="test-author">
  <div class="test-avatar">SL</div>
  <div>
@@ -632,59 +540,50 @@
  </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="cta-section">
- <div class="container">
- <h2>Ready to See How Much You Can Save?</h2>
- <p>Send us one product request. We'll return with factory options, pricing, and a quote within 24 hours. No commitment. No commission. Just results.</p>
- <a href="#contact" class="btn btn-primary">🚀 Send Your First Request</a>
- </div>
-</section>
-
 <!-- ===== CONTACT ===== -->
 <section class="section" id="contact">
  <div class="container">
  <div class="section-title">
  <div class="section-label">— Get in Touch —</div>
- <h2>Send a Product Request</h2>
- <p>Any product, any category. We'll reply within 24 hours with factory options and pricing. No commitment, no fees.</p>
+ <h2>Message Us on WhatsApp</h2>
+ <p>Send us a product name + rough quantity. We'll reply within 1 hour with factory options and pricing. No commitment, no fees.</p>
  </div>
  <div class="contact-grid">
  <div class="contact-info">
  <h3>Contact Information</h3>
- <p style="margin-bottom: 1.5rem;">Available 6 days a week. We typically respond within 1 hour during business hours.</p>
- <div class="contact-row">
- <span class="ci">📱</span>
- <a href="https://wa.me/861XXXXXXXXXX" target="_blank">+86 1XX XXXX XXXX</a>
+ <p style="margin-bottom:1rem;font-weight:700;font-size:1rem;color:#111;">Beijing Miho Prime Import and Export Co., Ltd.</p>
+ <p style="margin-bottom: 1.5rem;">Available 7 days a week. We typically respond within 1 hour during business hours.</p>
+ <div class="contact-row" style="background:#dcf8c6;padding:14px 18px;border-radius:12px;margin-bottom:16px;">
+ <span class="ci" style="font-size:1.5rem;">💬</span>
+ <div>
+ <a href="https://wa.me/8613269652357" target="_blank" style="font-weight:700;font-size:1.05rem;color:#075e54;">+86 13269652357</a>
+ <p style="font-size:0.75rem;color:#555;margin:0;">Tap to chat — we typically respond within minutes</p>
+ </div>
  </div>
  <div class="contact-row">
  <span class="ci">✉️</span>
- <a href="mailto:sourcing@premiasource.com">sourcing@premiasource.com</a>
+ <span>mihooo.kitty@gmail.com</span>
  </div>
  <div class="contact-row">
  <span class="ci">🌐</span>
- <span>premiasource.com</span>
+ <span>https://mihoprime.top</span>
  </div>
  <div class="contact-row">
  <span class="ci">📍</span>
- <span>Guangzhou · Shenzhen · Shanghai, China</span>
+ <span>BeiJing,China</span>
  </div>
  <div class="contact-row">
  <span class="ci">🕐</span>
- <span>Mon — Sat · 09:00 — 20:00 (GMT+8)</span>
- </div>
- <div class="trust-box">
- <p><strong>💡 Just send us a product name + rough quantity.</strong> We'll reply with factory options, pricing, and a quote within 24 hours. No fees. No commitment.</p>
+ <span>Mon — Sun</span>
  </div>
  </div>
- <form class="contact-form" action="#" method="POST">
- <input type="text" name="name" placeholder="Your Full Name *" required />
- <input type="email" name="email" placeholder="Your Email *" required />
- <input type="text" name="company" placeholder="Company Name" />
- <input type="text" name="product" placeholder="Product You're Looking For" />
- <textarea name="message" placeholder="Tell us about your sourcing needs — product name, target quantity, rough specifications, certifications needed... (any product category welcome)"></textarea>
- <button type="submit" class="btn btn-primary">📩 Send Your Sourcing Request</button>
- </form>
+ <div style="background:#f8f6f1;border-radius:16px;padding:36px 32px;text-align:center;">
+ <div style="font-size:3rem;margin-bottom:1rem;">💬</div>
+ <h3 style="margin-bottom:0.5rem;">Chat With Us Directly</h3>
+ <p style="color:#777;font-size:0.9rem;margin-bottom:1.5rem;">No forms. No waiting. Just click and chat.</p>
+ <a href="https://wa.me/8613269652357" target="_blank" class="btn" style="background:#25D366;color:#fff;font-size:1.1rem;padding:18px 36px;border-radius:50px;display:inline-flex;align-items:center;gap:10px;">💬 Start WhatsApp Chat</a>
+ <p style="margin-top:1rem;font-size:0.78rem;color:#999;">Available 7 days a week · Typically replies within minutes</p>
+ </div>
  </div>
  </div>
 </section>
@@ -692,7 +591,7 @@
 <!-- ===== FOOTER ===== -->
 <footer>
  <div class="container">
- <p>&copy; 2025 — 2026 <strong>PremiaSource</strong>. All rights reserved. | China Sourcing Partner — No Commissions, Factory-Direct Pricing</p>
+ <p>&copy; 2025 — 2026 <strong>UltimateSourcing</strong>. All rights reserved. | China Sourcing Partner — No Commissions, Factory-Direct Pricing</p>
  </div>
 </footer>
 
@@ -729,20 +628,6 @@
  });
  }, { threshold: 0.1 });
  fadeEls.forEach(el => observer.observe(el));
- document.querySelector('.contact-form').addEventListener('submit', function(e) {
- e.preventDefault();
- const btn = this.querySelector('button');
- const orig = btn.textContent;
- btn.textContent = '✓ Sent! We\'ll be in touch within 24 hours.';
- btn.style.background = '#27ae60';
- btn.disabled = true;
- this.reset();
- setTimeout(() => {
- btn.textContent = orig;
- btn.disabled = false;
- btn.style.background = '';
- }, 4000);
- });
 </script>
 </body>
 </html>
